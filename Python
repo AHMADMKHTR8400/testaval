@@ -1,0 +1,19 @@
+number = int(input("adad aval ra vared kon"))
+numbertwo = int(input("adad dovom ra vared kon"))
+result = 0
+for i in range(numbertwo):
+   number = number * 1
+print(number)
+for j in range(numbertwo):
+   number = number * 2
+print(number)
+
+seats = 300
+while seats > 0:
+  print("Sell ticket")
+  seats = seats - 1
+
+counter = input("Addad Ra Vared Konid:")
+while counter < 5:
+  print(counter)
+  counter = counter + 1
