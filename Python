@@ -16,4 +16,3 @@ while seats > 0:
 counter = input("Addad Ra Vared Konid:")
 while counter < 5:
   print(counter)
-  counter = counter + 1
