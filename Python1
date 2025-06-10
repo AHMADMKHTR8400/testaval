@@ -1,0 +1,21 @@
+# دریافت دو عدد از کاربر
+number1 = int(input("Addad Aval Ra Vared Konid: "))
+number2 = int(input("Addad Dovoom Ra Vared Konid: "))
+
+# تعیین عدد کوچک‌تر و بزرگ‌تر
+start = min(number1, number2)
+end = max(number1, number2)
+
+total = 0  # متغیر برای ذخیره مجموع
+
+print("اعداد زوج در محدوده:")
+
+for number in range(start, end + 1):
+    if number % 2 == 0:  # بررسی زوج بودن عدد
+        if total + number > 200:  # اگر مجموع از 200 بیشتر شود
+            print("\nمجموع از 200 گذشت! محاسبه متوقف شد.")
+            break
+        print(number, end=' ')  # نمایش عدد زوج
+        total += number  # اضافه کردن به مجموع
+
+print(f"\nمجموع اعداد زوج: {total}")
